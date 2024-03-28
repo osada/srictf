@@ -22,7 +22,7 @@ RUN cargo build --release
 
 ## For Release image
 
-FROM debian:buster-20240110
+FROM debian:buster-20240311
 
 
 COPY --from=builder /srictf/target/release/srictf /usr/local/bin/srictf
